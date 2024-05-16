@@ -47,7 +47,7 @@ export default function GroupedTeamMembers({ employees, selectedTeam, setTeam })
         return (
           <div key={item.team} className=" mt-2" style={{ cursor: "pointer" }}>
             <h4 id={item.team} className="card-header text-secondary bg-white" onClick={handleTeamClick}>
-              {item.team}
+              {item.team} - {employees.filter((employee) => employee.teamName === item.team).length}
             </h4>
             <div id={"collapse_" + item.team} className={item.collapsed === true ? "collapse" : ""}>
               <hr />
