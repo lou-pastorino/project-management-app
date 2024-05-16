@@ -1,4 +1,5 @@
 {
+  "homepage": "https://lou-pastorino.github.io/project-management-app/",
   "name": "team-management-app",
   "private": true,
   "version": "0.0.0",
@@ -23,6 +24,7 @@
     "eslint-plugin-react": "^7.34.1",
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-react-refresh": "^0.4.6",
+    "gh-pages-deploy": "^0.5.1",
     "vite": "^5.2.0"
   },
   "description": "This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.",
