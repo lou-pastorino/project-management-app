@@ -1,8 +1,12 @@
 body {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Roboto Mono", sans-serif;
 }
 
 .card-collection {
   display: grid !important;
   grid-template-columns: 1fr 1fr 1fr !important;
+}
+
+.nav-link {
+  color: black;
 }

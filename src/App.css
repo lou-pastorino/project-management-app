@@ -1,5 +1,14 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap");
+
+:root {
+  --button-color: #ffbe92;
+  --button-text-color: black;
+  --primary-brand: #ffbe92;
+  --primary-brand-text: #1b1145;
+}
+
 body {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Roboto Mono", sans-serif;
 }
 
 .card-collection {
@@ -19,4 +28,24 @@ h5,
 h6,
 p {
   text-align: center;
+}
+
+.footer {
+  padding-top: 1rem;
+  min-width: 100%;
+  background-color: var(--primary-brand);
+}
+
+.navbar {
+  background-color: var(--primary-brand);
+}
+
+header.container {
+  margin-top: 1rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 0.5rem;
+}
+
+.standout {
+  background-color: var(--primary-brand);
 }
