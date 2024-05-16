@@ -7,6 +7,7 @@ export default function Employees({ employees, selectedTeam, handleEmployeeCardC
     <main className="container">
       <div className="row justify-content-center mt-3 mb-3">
         <div className="col-6">
+          <p>Choose the team you wish to build using the dropdown below</p>
           <Teams selectedTeam={selectedTeam} handleTeamSelectionChange={handleTeamSelectionChange} />
         </div>
       </div>
