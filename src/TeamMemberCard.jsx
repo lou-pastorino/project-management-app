@@ -1,5 +1,6 @@
-import femaleProfile from "./images/femaleProfile.jpg";
+import femaleProfilePic from "./images/female-employee-icon.webp";
 import maleProfile from "./images/maleProfile.jpg";
+import maleProfilePic from "./images/male-employee-icon.webp";
 
 export default function TeamMemberCard({ employee, selectedTeam, handleEmployeeCardClick }) {
   return (
@@ -11,9 +12,9 @@ export default function TeamMemberCard({ employee, selectedTeam, handleEmployeeC
       onClick={handleEmployeeCardClick}
     >
       {employee.gender === "male" ? (
-        <img src={maleProfile} className="card-img-top" />
+        <img src={maleProfilePic} className="card-img-top" />
       ) : (
-        <img src={femaleProfile} className="card-img-top" />
+        <img src={femaleProfilePic} className="card-img-top" />
       )}
 
       <div className="card-body">
