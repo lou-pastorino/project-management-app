@@ -6,21 +6,29 @@ export default function GroupedTeamMembers({ employees, selectedTeam, setTeam })
   function groupTeamMembers() {
     var teams = [];
 
-    var teamAMembers = employees.filter((employee) => employee.teamName === "TeamA");
-    var teamA = { team: "TeamA", members: teamAMembers, collapsed: selectedTeam === "TeamA" ? false : true };
-    teams.push(teamA);
+    var FrontendMembers = employees.filter((employee) => employee.teamName === "Frontend");
+    var Frontend = {
+      team: "Frontend",
+      members: FrontendMembers,
+      collapsed: selectedTeam === "Frontend" ? false : true,
+    };
+    teams.push(Frontend);
 
-    var teamBMembers = employees.filter((employee) => employee.teamName === "TeamB");
-    var teamB = { team: "TeamB", members: teamBMembers, collapsed: selectedTeam === "TeamB" ? false : true };
-    teams.push(teamB);
+    var BackendMembers = employees.filter((employee) => employee.teamName === "Backend");
+    var Backend = { team: "Backend", members: BackendMembers, collapsed: selectedTeam === "Backend" ? false : true };
+    teams.push(Backend);
 
-    var teamCMembers = employees.filter((employee) => employee.teamName === "TeamC");
-    var teamC = { team: "TeamC", members: teamCMembers, collapsed: selectedTeam === "TeamC" ? false : true };
-    teams.push(teamC);
+    var DatabaseMembers = employees.filter((employee) => employee.teamName === "Database");
+    var Database = {
+      team: "Database",
+      members: DatabaseMembers,
+      collapsed: selectedTeam === "Database" ? false : true,
+    };
+    teams.push(Database);
 
-    var teamDMembers = employees.filter((employee) => employee.teamName === "TeamD");
-    var teamD = { team: "TeamD", members: teamDMembers, collapsed: selectedTeam === "TeamD" ? false : true };
-    teams.push(teamD);
+    var DesignMembers = employees.filter((employee) => employee.teamName === "Design");
+    var Design = { team: "Design", members: DesignMembers, collapsed: selectedTeam === "Design" ? false : true };
+    teams.push(Design);
 
     return teams;
   }
@@ -39,7 +47,7 @@ export default function GroupedTeamMembers({ employees, selectedTeam, setTeam })
         return (
           <div key={item.team} className="card mt-2" style={{ cursor: "pointer" }}>
             <h4 id={item.team} className="card-header text-secondary bg-white" onClick={handleTeamClick}>
-              Team Name: {item.team}
+              {item.team}
             </h4>
             <div id={"collapse_" + item.team} className={item.collapsed === true ? "collapse" : ""}>
               <hr />
