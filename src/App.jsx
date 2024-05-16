@@ -126,8 +126,10 @@ function App() {
     localStorage.setItem("selectedTeam", JSON.stringify(selectedTeam));
   }, [selectedTeam]);
 
+  const basename = "/project-management-app/";
+
   return (
-    <Router>
+    <Router basename={basename}>
       <Nav />
       <Header
         selectedTeam={selectedTeam}
