@@ -45,7 +45,7 @@ export default function GroupedTeamMembers({ employees, selectedTeam, setTeam })
     <main className="container">
       {groupedEmployees.map((item) => {
         return (
-          <div key={item.team} className="card mt-2" style={{ cursor: "pointer" }}>
+          <div key={item.team} className=" mt-2" style={{ cursor: "pointer" }}>
             <h4 id={item.team} className="card-header text-secondary bg-white" onClick={handleTeamClick}>
               {item.team}
             </h4>
