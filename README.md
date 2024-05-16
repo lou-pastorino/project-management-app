@@ -2,13 +2,9 @@
 
 This app can be used to assign members of an organisation to different teams for different projects.
 
-## Table of Contents
-
-- [Description] (#description)
-
 ## Description
 
-The Project Management App is a simple app created using React and React Router.
+The Project Management App is a simple app created using React and React Router. The point of building this simple app was to practise and showcase my ability to build a React application using React Router, state and hooks.
 
 ## Usage
 
